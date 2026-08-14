@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parabéns, Jojo!</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#fff1f5,#ffe1ec,#fff7fb);overflow:hidden;position:relative;}
+.decor{position:absolute;font-size:72px;opacity:.16;user-select:none;pointer-events:none;animation:float 6s ease-in-out infinite;}
+.d1{top:6%;left:6%;} .d2{top:12%;right:8%;animation-delay:1s;} .d3{bottom:10%;left:8%;animation-delay:2s;} .d4{bottom:12%;right:10%;animation-delay:3s;} .d5{top:45%;left:2%;font-size:54px;animation-delay:4s;} .d6{top:50%;right:2%;font-size:54px;animation-delay:5s;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.card{width:94%;max-width:720px;max-height:90vh;overflow:auto;background:rgba(255,255,255,.96);border-radius:30px;padding:42px 34px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.12);border:1px solid rgba(255,255,255,.9);position:relative;z-index:2;}
+.logo{width:94px;height:94px;margin:0 auto 18px;border-radius:50%;background:linear-gradient(135deg,#ff7ba9,#ffb3cc);display:flex;align-items:center;justify-content:center;color:#fff;font-size:44px;font-family:'Playfair Display',serif;box-shadow:0 10px 22px rgba(255,123,169,.35);}
+h1{font-family:'Playfair Display',serif;color:#c94f7c;font-size:38px;margin-bottom:8px;}
+.subtitle{color:#7a6a72;font-size:16px;margin-bottom:26px;}
+.badge{display:inline-block;background:#fff3f7;color:#b14f73;border:1px solid #ffd6e5;padding:10px 16px;border-radius:999px;font-weight:600;margin-bottom:24px;}
+.input-group{position:relative;margin-bottom:18px;}
+.input-group input{width:100%;padding:15px 16px 15px 48px;border:1px solid #f2b8c9;border-radius:16px;font-size:16px;outline:none;}
+.input-group input:focus{border-color:#ff7ba9;box-shadow:0 0 0 4px rgba(255,123,169,.18);}
+.icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:#c94f7c;}
+button{width:100%;border:none;border-radius:16px;padding:15px;background:linear-gradient(135deg,#ff6f9f,#e75480);color:#fff;font-size:16px;font-weight:600;cursor:pointer;box-shadow:0 10px 24px rgba(231,84,128,.28);}
+.hint{margin-top:16px;padding:14px;border-radius:16px;background:#fff6fa;border:1px solid #ffd9e7;color:#a05a75;font-size:14px;}
+.footer{margin-top:22px;color:#8a6f7a;font-size:12px;}
+#mensagem{display:none;}
+.celebration{font-size:54px;margin-bottom:10px;}
+.message-box{text-align:left;background:#fff8fb;border:1px solid #ffd6e5;border-radius:24px;padding:28px;color:#5a4a52;line-height:1.9;font-size:16px;white-space:pre-line;}
+.signature{margin-top:24px;color:#a05a75;font-weight:600;}
+.ribbon{position:absolute;top:16px;right:-38px;background:#ff6f9f;color:white;padding:10px 50px;transform:rotate(35deg);font-size:13px;font-weight:700;box-shadow:0 6px 14px rgba(0,0,0,.12);}
+@media (max-width:520px){.card{padding:30px 22px;} h1{font-size:30px;} .message-box{font-size:15px;padding:22px;}}
+</style>
+</head>
+<body>
+
+<div class="decor d1">💄</div>
+<div class="decor d2">💋</div>
+<div class="decor d3">🧴</div>
+<div class="decor d4">💅</div>
+<div class="decor d5">✨</div>
+<div class="decor d6">🌸</div>
+
+<div class="card">
+  <div class="ribbon">PROMOVIDA</div>
+
+  <div id="login">
+    <div class="logo">J</div>
+
+    <h1>Parabéns, Jojo!</h1>
+
+    <div class="subtitle">
+      Uma homenagem especial pela sua promoção para
+      <strong>Consultora de Beleza</strong> ✨
+    </div>
+
+    <div class="badge">🌟 Nova Consultora de Beleza 🌟</div>
+
+    <p style="color:#666;margin-bottom:22px;">
+      Digite a senha para ler um texto que vai te ajudar a esquecer o texto da
+      <strong>Consultora de Atendimento</strong>. 💖
+    </p>
+
+    <div class="input-group">
+      <span class="icon">🔒</span>
+      <input type="password" id="senha" placeholder="Digite a senha">
+    </div>
+
+    <button onclick="verificarSenha()">Ler mensagem</button>
+
+    <div class="hint">
+      💡 <strong>Dica:</strong> Senha do meu notebook
+    </div>
+
+    <div class="footer">
+      Feito com carinho especialmente para a Jojo 💖
+    </div>
+  </div>
+
+  <div id="mensagem">
+    <div class="celebration">🎉💖✨</div>
+
+    <h1>Você conseguiu, Jojo!</h1>
+
+    <div class="subtitle">
+      Hoje é dia de celebrar a sua promoção para
+      <strong>Consultora de Beleza</strong> 🌸
+    </div>
+
+    <div class="message-box">Parabéns Jojooooooooooooo
+
+Finalmente a nossa promoção saiu e eu não poderia estar mais feliz por você (nós).
+
+Não sei se a PanVel imagina o tamanho do acerto que fizeram com a promoção da Jojo, a promotora com o maior conhecimento e o maior coração de todos ( e a maior fome também).
+
+Por mim, dariam um voucher vitalício de cappuccino que não dê espinha, além de liberarem um segundo intervalo oficial apenas para ela (pra poder descansar um pouco os pés depois de entregar as maiores montagens e as maiores vendas), com o intervalo começando às 21h e terminando às 23h.
+
+Como não tenho um tênis do seu tamanho para te dar, única coisa que posso te dar é um Boa Sorte e toda a ajuda possível que você precisar, suporte 24h por dia e 7 dias por semana (menos na hora do corte do cabelo aprovado pela Dona Di).
+
+Feliz Ano Novo Izabella.
+</div>
+
+    <div class="signature">
+      Com carinho, Vetor 💖
+    </div>
+
+    <div class="footer">
+      Feliz Ano Novo, Izabella ✨
+    </div>
+  </div>
+</div>
+
+<script>
+function verificarSenha(){
+  const senha = document.getElementById('senha').value.trim();
+  if(senha === 'cadethe26'){
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('mensagem').style.display = 'block';
+  } else {
+    alert('Senha incorreta! 💔');
+  }
+}
+document.getElementById('senha').addEventListener('keypress', function(e){
+  if(e.key === 'Enter') verificarSenha();
+});
+</script>
+
+</body>
+</html>
